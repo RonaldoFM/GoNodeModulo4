@@ -1,0 +1,88 @@
+GoNodeModulo4
+git remote add origin https://github.com/RonaldoFM/GoNodeModulo4.git
+git push -u origin master
+
+npm install -g @adonisjs/cli
+
+adonis new modulo4 --api-only
+adonis serve --dev
+
+npm install -D eslint
+npx eslint --init
+
+npm i --save pg
+
+adonis migration:run
+adonis make:controller User
+adonis route:list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "env": {
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+    }
+}
+
