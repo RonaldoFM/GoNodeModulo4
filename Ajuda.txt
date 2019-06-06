@@ -15,7 +15,11 @@ npm i --save pg
 adonis migration:run
 adonis make:controller User
 adonis route:list
+adonis make:controller Session
+adonis make:controller ForgotPassword
 
+adonis migration:rollback
+adonis migration:run
 
 
 

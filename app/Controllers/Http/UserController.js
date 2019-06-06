@@ -1,5 +1,5 @@
 "use strict";
-const User = user("App/Models/User");
+const User = use("App/Models/User");
 class UserController {
   async store({ request }) {
     const data = request.only(["username", "email", "password"]);
