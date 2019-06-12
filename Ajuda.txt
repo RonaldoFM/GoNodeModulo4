@@ -20,7 +20,14 @@ adonis make:controller ForgotPassword
 
 adonis migration:rollback
 adonis migration:run
-
+adonis install @adonisjs/mail
+npm install moment
+adonis make:model File -m -c
+adonis migration:run
+adonis make:model Project -m -c
+adonis make:model Task -m -c
+adonis migration:run
+adonis route:list
 
 
 
